@@ -4,8 +4,8 @@ init:
  - sh: echo $APPVEYOR_BUILD_WORKER_IMAGE
  - sh: echo $APPVEYOR_BUILD_WORKER_CLOUD
  
- test_script:
+test_script:
  - sh: export DOTNET_CLI_TELEMETRY_OPTOUT=1
  - sh: dotnet build
  
- build: off
+build: off
