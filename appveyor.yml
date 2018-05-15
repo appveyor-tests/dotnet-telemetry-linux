@@ -6,9 +6,8 @@ init:
  - sh: cat /etc/environment
  
 test_script:
- - sh: export DOTNET_PRINT_TELEMETRY_MESSAGE=false
- - sh: unset DOTNET_CLI_TELEMETRY_OPTOUT
+ - sh: echo $DOTNET_PRINT_TELEMETRY_MESSAGE
  - sh: echo $DOTNET_CLI_TELEMETRY_OPTOUT
- - sh: dotnet -d build
+ - sh: dotnet build
  
 build: off
