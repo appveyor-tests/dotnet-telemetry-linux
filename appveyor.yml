@@ -6,6 +6,6 @@ init:
  
 test_script:
  - sh: export DOTNET_CLI_TELEMETRY_OPTOUT=true
- - sh: DOTNET_CLI_TELEMETRY_OPTOUT=true dotnet build
+ - sh: DOTNET_CLI_TELEMETRY_OPTOUT=true dotnet -d build
  
 build: off
