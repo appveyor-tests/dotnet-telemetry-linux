@@ -5,7 +5,7 @@ init:
  - sh: echo $APPVEYOR_BUILD_WORKER_CLOUD
  
 test_script:
- - sh: export DOTNET_PRINT_TELEMETRY_MESSAGE=1
+ - sh: export DOTNET_PRINT_TELEMETRY_MESSAGE=true
  - sh: DOTNET_CLI_TELEMETRY_OPTOUT=1 dotnet -d build
  
 build: off
