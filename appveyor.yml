@@ -21,7 +21,7 @@ test_script:
     OUTPUT=$(dotnet -d build || true)
     echo "${OUTPUT}"
     while read -r line; do
-      if [[ $line =~ ^Telemetry is: Enabled$ ]]; then
+      if [[ $line =~ ^Telemetry\ is:\ Enabled$ ]]; then
         echo "Telemetry is Enabled"
         return 2
       fi
